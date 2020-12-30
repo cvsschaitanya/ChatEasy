@@ -1,3 +1,29 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat_window {
+    /* background: lightblue; */
+    overflow: scroll;
+    height: 500px;
+    border-bottom: 1px ridge rgba(128, 128, 128, 0.274);
+    border-top: 1px ridge rgba(128, 128, 128, 0.274);
+    margin-bottom: 10px;
+    /* flex: 1; */
+}
+
+#chat_window::-webkit-scrollbar {
+    display: none
+}
+
 .speaker {
     color: green;
     font-size: 15px
@@ -8,7 +34,11 @@
     font-size: 15px
 }
 
+.footer {
+    flex: 1;
+    display: flex;
+}
 
-/* .window p {
-    margin-bottom: 0px;
-} */
+.send-button {
+    margin: 0 5px 0 5px;
+}
